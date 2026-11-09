@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RD Station · Equipes — protótipo navegável</title>
+<link rel="icon" href="assets/rds-symbol.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800;9..40,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/icons.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+  <header class="navbar">
+    <a class="logo" href="#/equipes" aria-label="RD Station">
+      <img src="assets/rds-symbol.svg" alt="" width="32" height="32">
+      <img class="logo__lettering" src="assets/rds-lettering.svg" alt="RD Station">
+    </a>
+    <button class="account" type="button">
+      <img class="avatar" src="assets/avatar.png" alt="" width="24" height="24">
+      <span class="account__name">Any Lima</span>
+      <span class="ico ico--20" style="--m:var(--i-caret)"></span>
+    </button>
+  </header>
+
+  <nav class="rail" aria-label="Navegação principal">
+    <button class="rail__item" type="button" aria-label="Início">
+      <img src="assets/nav-icon-1.svg" alt="" width="24" height="24">
+    </button>
+    <button class="rail__item is-active" type="button" aria-label="Contas">
+      <img src="assets/nav-icon-2.svg" alt="" width="24" height="24">
+    </button>
+  </nav>
+
+  <main class="content" id="app"></main>
+</div>
+
+<div id="modal-root"></div>
+<div id="toast-root" class="toast-root" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
